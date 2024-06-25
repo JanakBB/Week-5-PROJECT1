@@ -1,4 +1,5 @@
 import User from "../models/user.model.js";
+import bcrypt from "bcryptjs";
 
 
 const signup = async (req, res, next) => {
@@ -10,10 +11,12 @@ const signup = async (req, res, next) => {
         err.status = 404;
         throw err;
     }
+    let salt = await bcrypt.genSalt(10);
+    let hashedPassword = await bcrypt.hash(password, salt);
     let newuser = await User.create({
         name,
         email,
-        password,
+        password: hashedPassword,
         isAdmin
     });
     res.send({
