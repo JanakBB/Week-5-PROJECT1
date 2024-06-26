@@ -1,0 +1,14 @@
+
+6/25/2024 - POST - /api/v1/users/signup - ::1 - 200 - 280ms
+6/25/2024 - POST - /api/v1/users/signup - ::1 - 200 - 269ms
+6/25/2024 - POST - /api/v1/users/signup - ::1 - 200 - 224ms
+6/25/2024 - POST - /api/v1/users/login - ::1 - 500 - 19ms
+6/26/2024 - POST - /api/v1/users/signup - ::1 - 200 - 249ms
+6/26/2024 - POST - /api/v1/users/login - ::1 - 500 - 12ms
+6/26/2024 - POST - /api/v1/users/login - ::1 - 500 - 34ms
+6/26/2024 - POST - /api/v1/users/login - ::1 - 500 - 21ms
+6/26/2024 - POST - /api/v1/users/login - ::1 - 500 - 18ms
+6/26/2024 - GET - ///C:/Users/ACER/Desktop/MERN/MERN%20PROJECTS/Week-5/PROJECT1/backend/controller/user.controller.js:42:23)/n - ::1 - 404 - 2ms
+6/26/2024 - POST - /api/v1/users/login - ::1 - 500 - 15ms
+6/26/2024 - POST - /api/v1/users/loginn - ::1 - 404 - 2ms
+6/26/2024 - POST - /api/v1/users/login - ::1 - 500 - 8ms

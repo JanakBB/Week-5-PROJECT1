@@ -1,22 +1,18 @@
 import User from "../models/user.model.js";
-import bcrypt from "bcryptjs";
-
 
 const signup = async (req, res, next) => {
    try{
     let {name, email, password, isAdmin} = req.body;
-    let userexiste = await User.findOne({email});//{email: email => key and value same than only write email}
+    let userexiste = await User.findOne({email});
     if(userexiste) {
         let err = new Error(`User with email ${email} already exists!`);
         err.status = 404;
         throw err;
     }
-    let salt = await bcrypt.genSalt(10);
-    let hashedPassword = await bcrypt.hash(password, salt);
     let newuser = await User.create({
         name,
         email,
-        password: hashedPassword,
+        password,
         isAdmin
     });
     res.send({
@@ -34,4 +30,27 @@ const signup = async (req, res, next) => {
    }
 }
 
-export {signup};
+const login = async (req, res, next) => {
+    try {
+        let {email, password} = req.body;
+        let user = await User.findOne({email});
+        if(!user) {
+            let err = new Error(`${email} not registered`);
+            err.status = 400;
+            throw err;
+        }
+        if(await user.matchPassword(password)) {
+            res.send({message: "Login Success"});
+        }
+        else {
+            let err = new Error("Invalid Password");
+            err.status = 400;
+            throw err;
+        }
+    } 
+    catch(err) {
+        next(err);
+    }
+}
+
+export {signup, login};

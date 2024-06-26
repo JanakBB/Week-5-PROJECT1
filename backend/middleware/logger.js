@@ -1,5 +1,4 @@
 import fs from "fs";
-// const colors = require("colors");
 import colors from "colors";
 
 function logger (req, res, next) {
