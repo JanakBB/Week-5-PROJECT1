@@ -12,3 +12,6 @@
 6/26/2024 - POST - /api/v1/users/login - ::1 - 500 - 15ms
 6/26/2024 - POST - /api/v1/users/loginn - ::1 - 404 - 2ms
 6/26/2024 - POST - /api/v1/users/login - ::1 - 500 - 8ms
+6/26/2024 - POST - /api/v1/users/login - ::1 - 200 - 150ms
+6/26/2024 - POST - /api/v1/users/login - ::1 - 400 - 192ms
+6/26/2024 - POST - /api/v1/users/login - ::1 - 400 - 6ms
