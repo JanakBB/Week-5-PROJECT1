@@ -1,9 +1,4 @@
 import User from "../models/user.model.js";
-<<<<<<< HEAD
-=======
-
->>>>>>> parent of 8041712 (implemented password hash in controller)
-
 const signup = async (req, res, next) => {
    try{
     let {name, email, password, isAdmin} = req.body;
