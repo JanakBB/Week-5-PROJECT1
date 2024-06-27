@@ -1,4 +1,6 @@
 import User from "../models/user.model.js";
+import createToken from "../utils/token.utils.js";
+
 const signup = async (req, res, next) => {
    try{
     let {name, email, password, isAdmin} = req.body;
@@ -14,6 +16,8 @@ const signup = async (req, res, next) => {
         password,
         isAdmin
     });
+    createToken(res, newuser._id);
+
     res.send({
         message: "User registered successfully",
         user: {
@@ -39,6 +43,7 @@ const login = async (req, res, next) => {
             throw err;
         }
         if(await user.matchPassword(password)) {
+            createToken(res, user._id);
             res.send({message: "Login Success"});
         }
         else {
@@ -52,4 +57,9 @@ const login = async (req, res, next) => {
     }
 }
 
-export {signup, login};
+let logout = (req, res) => {
+    res.clearCookie("jwt");
+    res.send("Logout Soccess!")
+}
+
+export {signup, login, logout};
