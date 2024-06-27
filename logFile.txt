@@ -45,3 +45,15 @@
 6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 146ms
 6/27/2024 - POST - /api/v1/users/logout - ::1 - 500 - 2ms
 6/27/2024 - POST - /api/v1/users/logout - ::1 - 200 - 4ms
+6/27/2024 - POST - /api/v1/users/signup - ::1 - 404 - 31ms
+6/27/2024 - POST - /api/v1/users/signup - ::1 - 200 - 227ms
+6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 152ms
+6/27/2024 - POST - /api/v1/users/logout - ::1 - 200 - 1ms
+6/27/2024 - POST - /api/v1/users/signup - ::1 - 200 - 85ms
+6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 160ms
+6/27/2024 - POST - /api/v1/users/logout - ::1 - 200 - 2ms
+6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 132ms
+6/27/2024 - POST - /api/v1/users/signup - ::1 - 200 - 87ms
+6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 159ms
+6/27/2024 - POST - /api/v1/users/logout - ::1 - 200 - 3ms
+6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 137ms

@@ -1,8 +1,8 @@
+import asyncHandler from "../middleware/asynchandler.middleware.js";
 import User from "../models/user.model.js";
 import createToken from "../utils/token.utils.js";
 
-const signup = async (req, res, next) => {
-   try{
+const signup = asyncHandler( async (req, res, next) => {
     let {name, email, password, isAdmin} = req.body;
     let userexiste = await User.findOne({email});
     if(userexiste) {
@@ -27,14 +27,9 @@ const signup = async (req, res, next) => {
             isAdmin:newuser.isAdmin
         },
     });
-   }
-   catch (err) {
-    next(err);
-   }
-}
+});
 
-const login = async (req, res, next) => {
-    try {
+const login = asyncHandler(async (req, res, next) => {
         let {email, password} = req.body;
         let user = await User.findOne({email});
         if(!user) {
@@ -51,15 +46,11 @@ const login = async (req, res, next) => {
             err.status = 400;
             throw err;
         }
-    } 
-    catch(err) {
-        next(err);
-    }
-}
+});
 
-let logout = (req, res) => {
+let logout = asyncHandler((req, res) => {
     res.clearCookie("jwt");
     res.send("Logout Soccess!")
-}
+})
 
 export {signup, login, logout};
