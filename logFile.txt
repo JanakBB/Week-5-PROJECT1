@@ -57,3 +57,10 @@
 6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 159ms
 6/27/2024 - POST - /api/v1/users/logout - ::1 - 200 - 3ms
 6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 137ms
+6/27/2024 - POST - /api/v1/users/signup - ::1 - 200 - 205ms
+6/27/2024 - POST - /api/v1/users/signup - ::1 - 200 - 284ms
+6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 238ms
+6/27/2024 - POST - /api/v1/users/logout - ::1 - 200 - 3ms
+6/27/2024 - GET - /api/v1/users/ - ::1 - 200 - 25ms
+6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 227ms
+6/27/2024 - GET - /api/v1/users/ - ::1 - 200 - 62ms
