@@ -64,5 +64,17 @@ const getUserProfile = asyncHandler(async (req, res) => {
     }
 })
 //befor worldcup final
-export {signup, login, logout, getUsers, getUserProfile};
+const updateUserProfile = asyncHandler(async (req, res) => {
+    if(req.user) {
+        let user = await User.findById(req.user._id);
+        user.name = req.body.name || user.name;
+        user.email = req.body.email || user.email;
+        if(req.body.password) {
+            user.password = req.body.password;
+        }
+        let updatedUser = await user.save();
+        res.send({message: "User profile update", user: updatedUser});
+    }
+})
+export {signup, login, logout, getUsers, getUserProfile, updateUserProfile};
 

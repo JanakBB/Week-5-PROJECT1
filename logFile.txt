@@ -125,3 +125,15 @@
 6/30/2024 - GET - /api/v1/users/profile - ::1 - 200 - 9ms
 6/30/2024 - POST - /api/v1/users/login - ::1 - 200 - 184ms
 6/30/2024 - GET - /api/v1/users/profile - ::1 - 200 - 6ms
+6/30/2024 - POST - /api/v1/users/signup - ::1 - 200 - 255ms
+6/30/2024 - GET - /api/v1/users/profile - ::1 - 200 - 19ms
+6/30/2024 - PUT - /api/v1/users/profile - ::1 - 200 - 127ms
+6/30/2024 - PUT - /api/v1/users/profile - ::1 - 200 - 119ms
+6/30/2024 - PUT - /api/v1/users/profile - ::1 - 200 - 145ms
+6/30/2024 - POST - /api/v1/users/login - ::1 - 400 - 8ms
+6/30/2024 - POST - /api/v1/users/login - ::1 - 400 - 5ms
+6/30/2024 - POST - /api/v1/users/login - ::1 - 400 - 5ms
+6/30/2024 - POST - /api/v1/users/login - ::1 - 200 - 195ms
+6/30/2024 - PUT - /api/v1/users/profile - ::1 - 200 - 219ms
+6/30/2024 - POST - /api/v1/users/login - ::1 - 400 - 210ms
+6/30/2024 - POST - /api/v1/users/login - ::1 - 200 - 194ms
