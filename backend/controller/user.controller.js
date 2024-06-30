@@ -63,4 +63,6 @@ const getUserProfile = asyncHandler(async (req, res) => {
         res.send(req.user);
     }
 })
+//befor worldcup final
 export {signup, login, logout, getUsers, getUserProfile};
+
