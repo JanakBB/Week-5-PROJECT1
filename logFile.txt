@@ -101,3 +101,10 @@
 6/27/2024 - POST - /api/v1/users/signup - ::1 - 200 - 121ms
 6/27/2024 - POST - /api/v1/users/login - ::1 - 200 - 92ms
 6/27/2024 - GET - /api/v1/users/ - ::1 - 200 - 11ms
+6/29/2024 - POST - /api/v1/users/signup - ::1 - 404 - 67ms
+6/29/2024 - POST - /api/v1/users/signup - ::1 - 500 - 29ms
+6/29/2024 - POST - /api/v1/users/signup - ::1 - 200 - 262ms
+6/29/2024 - POST - /api/v1/users/login - ::1 - 200 - 215ms
+6/29/2024 - GET - /api/v1/users/profile - ::1 - 200 - 47ms
+6/29/2024 - POST - /api/v1/users/logout - ::1 - 200 - 3ms
+6/29/2024 - GET - /api/v1/users/profile - ::1 - 401 - 4ms
