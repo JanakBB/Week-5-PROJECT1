@@ -22,7 +22,7 @@ const checkAuth = asyncHandler(async (req, res, next) => {
 });
 
 const checkAdmin = asyncHandler(async (req, res, next) => {
-    let {isAdmin} = req.user;
+    let isAdmin = req.user;
     if(isAdmin) next();
     else {
         let err = new Error("You are not authorized to peform this operation");
