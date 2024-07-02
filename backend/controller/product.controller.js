@@ -71,6 +71,9 @@ const addUserReview = asyncHandler(async (req, res) => {
     let product = await Product.findById(id);
     if(!product) throw new ApiError(404, "Product not found !");
 
+    const alreadyReviewd = product.reviews.find((r) => r.user.toString() === req.user._id.toString());
+    if(alreadyReviewd) throw new ApiError(400, "Already Reviewed!");
+
     product.reviews.push({
         name: req.user.name,
         user: req.user._id,
