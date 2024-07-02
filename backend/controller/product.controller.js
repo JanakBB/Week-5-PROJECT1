@@ -1,3 +1,4 @@
+import collectionWords from "../data/bad.data.js";
 import asyncHandler from "../middleware/asynchandler.middleware.js";
 import Product from "../models/product.model.js";
 import ApiError from "../utils/apiError.js";
@@ -71,8 +72,20 @@ const addUserReview = asyncHandler(async (req, res) => {
     let product = await Product.findById(id);
     if(!product) throw new ApiError(404, "Product not found !");
 
+    let toUpperComment = comment.toUpperCase();
+    let review = toUpperComment.split(" ");
+
+    for (let word of review) {
+    if (collectionWords.includes(word)) {
+        res.send("You used BAD word comment");
+        break;
+    }
+    }
+
     const alreadyReviewd = product.reviews.find((r) => r.user.toString() === req.user._id.toString());
     if(alreadyReviewd) throw new ApiError(400, "Already Reviewed!");
+
+   
 
     product.reviews.push({
         name: req.user.name,
