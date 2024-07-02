@@ -80,6 +80,9 @@ const addUserReview = asyncHandler(async (req, res) => {
         rating,
         comment
     });
+    product.numReviews = product.reviews.length;
+    let totalRating = product.reviews.reduce((acc, r) => acc + r.rating, 0);
+    product.rating = (totalRating / product.numReviews).toFixed(2);
     await product.save();
     res.send({message: "Review added to product"});
 })

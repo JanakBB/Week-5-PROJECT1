@@ -234,3 +234,14 @@
 7/2/2024 - PUT - /api/v1/products/addreview/6683534c505b4be87a7c5537 - ::1 - 200 - 38ms
 7/2/2024 - GET - /api/v1/products - ::1 - 200 - 40ms
 7/2/2024 - PUT - /api/v1/products/addreview/6683534c505b4be87a7c5537 - ::1 - 400 - 24ms
+7/2/2024 - PUT - /api/v1/products/addreview/6683534c505b4be87a7c5537 - ::1 - 400 - 54ms
+7/2/2024 - GET - /api/v1/products - ::1 - 200 - 11ms
+7/2/2024 - GET - /api/v1/products - ::1 - 200 - 22ms
+7/2/2024 - POST - /api/v1/users/signup - ::1 - 200 - 266ms
+7/2/2024 - POST - /api/v1/users/login - ::1 - 200 - 192ms
+7/2/2024 - PUT - /api/v1/products/addreview/6683534c505b4be87a7c5537 - ::1 - 500 - 51ms
+7/2/2024 - PUT - /api/v1/products/addreview/6683534c505b4be87a7c5537 - ::1 - 500 - 69ms
+7/2/2024 - GET - /api/v1/products - ::1 - 200 - 11ms
+7/2/2024 - PUT - /api/v1/products/addreview/6683534c505b4be87a7c5537 - ::1 - 200 - 109ms
+7/2/2024 - GET - /api/v1/products - ::1 - 200 - 13ms
+7/2/2024 - GET - /api/v1/products - ::1 - 200 - 5ms
