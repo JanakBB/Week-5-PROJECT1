@@ -6,6 +6,7 @@ import logger from "./middleware/logger.js";
 
 //router imports
 import userRouter from "./routes/user.router.js";
+import productRouter from "./routes/product.router.js";
 
 //Initialize express app
 const app = express();
@@ -17,6 +18,7 @@ app.use(logger)
 
 //routes
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/products", productRouter);
 
 //error handler's
 app.use(notFoundHandler);
