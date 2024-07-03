@@ -258,3 +258,7 @@
 7/2/2024 - PUT - /api/v1/products/addreview/6683534c505b4be87a7c5537 - ::1 - 200 - 17ms
 7/2/2024 - PUT - /api/v1/products/addreview/6683534c505b4be87a7c5537 - ::1 - 200 - 15ms
 7/2/2024 - PUT - /api/v1/products/addreview/6683534c505b4be87a7c5537 - ::1 - 400 - 14ms
+7/2/2024 - POST - /api/v1/users/login - ::1 - 200 - 243ms
+7/2/2024 - POST - /api/v1/users/login - ::1 - 400 - 8ms
+7/2/2024 - POST - /api/v1/users/login - ::1 - 200 - 115ms
+7/2/2024 - POST - /api/v1/users/login - ::1 - 400 - 226ms
