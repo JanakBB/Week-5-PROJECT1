@@ -2,12 +2,16 @@ import asyncHandler from "../middleware/asynchandler.middleware.js";
 import User from "../models/user.model.js";
 import ApiError from "../utils/apiError.js";
 import createToken from "../utils/token.utils.js";
+import { isEmail } from "../utils/validator.js";
 
 //@description register new user
 //@route /api/v1/users/signup
 //@access public
 const signup = asyncHandler( async (req, res, next) => {
     let {name, email, password, isAdmin} = req.body;
+    if(!isEmail(email)){
+        throw new ApiError(400, "Invalid Email");
+    }
     let userexiste = await User.findOne({email});
     if(userexiste) {
         throw new ApiError(400, `User with email ${email} already exists!`)

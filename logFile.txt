@@ -262,3 +262,9 @@
 7/2/2024 - POST - /api/v1/users/login - ::1 - 400 - 8ms
 7/2/2024 - POST - /api/v1/users/login - ::1 - 200 - 115ms
 7/2/2024 - POST - /api/v1/users/login - ::1 - 400 - 226ms
+7/5/2024 - POST - /api/v1/users/signup - ::1 - 200 - 258ms
+7/5/2024 - POST - /api/v1/users/signup - ::1 - 200 - 206ms
+7/5/2024 - POST - /api/v1/users/signup - ::1 - 500 - 7ms
+7/5/2024 - POST - /api/v1/users/signup - ::1 - 400 - 6ms
+7/5/2024 - POST - /api/v1/users/signup - ::1 - 400 - 2ms
+7/5/2024 - POST - /api/v1/users/signup - ::1 - 200 - 250ms
