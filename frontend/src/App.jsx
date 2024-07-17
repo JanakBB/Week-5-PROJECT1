@@ -1,16 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Product from './components/Product'
+import products from './data';
+import { Col, Container, Row } from 'react-bootstrap';
+import ProductPage from './pages/ProductPage';
 
 function App() {
 
   return (
     <>
       <Header />
-      <h1>Ecommerce</h1>
+      <Container>
+        <ProductPage/>
+        {/* <Row>
+          {
+            products.map(product => (
+              <Col sm={12} md={6} lg={4} xl={3} >
+                <Product product={product}/>
+              </Col>
+            ))
+          }
+        </Row> */}
+      </Container>
       <Footer />
     </>
   )
