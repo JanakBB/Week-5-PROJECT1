@@ -1,25 +1,26 @@
 import {Navbar, Nav, Container} from 'react-bootstrap';
 import logo from "../assets/react.svg";
 import {FaShoppingCart, FaUser} from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
         <header>
             <Navbar variant='dark' bg='dark' expand='md' collapseOnSelect >
                 <Container>
-                    <Navbar.Brand>
+                    <NavLink to="/" className="navbar-brand" >
                         <img src={logo} alt="logo" />Broadway
-                    </Navbar.Brand>
+                    </NavLink>
                     <Navbar.Toggle aria-controls='navbar' />
                     <Nav className='ms-auto'>
-                        <Nav.Link>
+                        <NavLink to="/cart" className="nav-link" >
                             <FaShoppingCart />
                             Cart
-                        </Nav.Link>
-                        <Nav.Link>
+                        </NavLink>
+                        <NavLink to="/signin" className="nav-link" >
                             <FaUser />
                             Signin
-                        </Nav.Link>
+                        </NavLink>
                     </Nav>
                 </Container>
             </Navbar>

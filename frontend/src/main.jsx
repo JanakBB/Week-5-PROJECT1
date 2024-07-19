@@ -6,6 +6,8 @@ import './index.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import HomePage from './pages/HomePage.jsx';
 import ProductPage from './pages/ProductPage.jsx';
+import CartPage from './pages/CartPage.jsx';
+import LoginPage from './pages/LoginPage.jsx';
 
 // const router = createBrowserRouter([{
 //   path: "/",
@@ -26,6 +28,8 @@ const router = createBrowserRouter(
     <Route path='' element={<App />}>
       <Route path='' element={<HomePage />}/>
       <Route path='product' element={<ProductPage />} />
+      <Route path="cart" element={<CartPage/>} />
+      <Route path='signin' element={<LoginPage />} />
     </Route>
   )
 )
