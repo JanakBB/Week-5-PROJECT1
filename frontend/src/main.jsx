@@ -9,20 +9,6 @@ import ProductPage from './pages/ProductPage.jsx';
 import CartPage from './pages/CartPage.jsx';
 import LoginPage from './pages/LoginPage.jsx';
 
-// const router = createBrowserRouter([{
-//   path: "/",
-//   element: <App />,
-//   children: [
-//     {
-//       path: "",
-//       element: <HomePage/>
-//     },{
-//       path: "product",
-//       element: <ProductPage/>
-//     }
-//   ]
-// }]);
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='' element={<App />}>
