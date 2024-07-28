@@ -7,7 +7,7 @@ const ProductPage = () => {
     const [product, setProduct] = useState({});
     useEffect(() => {
         axios.get("/api/v1/products/6699c9799e0317f3de8d8884")
-         .then((resp) => console.log(resp))
+         .then((resp) => setProduct(resp.data))
          .catch((err => console.log("ERROR::", err.message)))
     }, [])
     return(
