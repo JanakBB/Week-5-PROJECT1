@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Col, Row, Image, ListGroup, Button } from "react-bootstrap";
 import Rating from "../components/Rating";
 import axios from "axios";
+import {useParams} from "react-router-dom";
 
 const ProductPage = () => {
     const [product, setProduct] = useState({});
+    const {id} = useParams()
     useEffect(() => {
-        axios.get("/api/v1/products/66a6b408d4779a3f0971df03")
+        axios.get("/api/v1/products/" + id)
          .then((resp) => setProduct(resp.data))
          .catch((err => console.log("ERROR::", err.message)))
     }, [])

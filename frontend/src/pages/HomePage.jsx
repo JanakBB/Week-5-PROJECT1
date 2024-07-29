@@ -13,7 +13,7 @@ const HomePage = () => {
     return(
     <>
         <h2>
-            Latest Products
+            Latest Products  http://192.168.2.105:5173/
         </h2>
         <Row>
             {

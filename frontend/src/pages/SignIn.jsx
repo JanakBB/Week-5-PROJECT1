@@ -1,13 +1,13 @@
 
 
-const LoginPage = () => {
+const SignIn = () => {
     return(
         <>
             <div>
-                Login page
+                SignIn page
             </div>
         </>
     )
 }
 
-export default LoginPage;
+export default SignIn;
