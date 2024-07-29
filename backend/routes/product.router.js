@@ -7,7 +7,7 @@ const router = express.Router();
 router.route("/").get(getProducts).post(checkAuth, checkAdmin, addProduct);
 
 router.route("/:id")
- .get(checkAuth, checkAdmin, getProductById)
+ .get(getProductById)
  .put(checkAuth, checkAdmin, updateProduct)
  .delete(checkAuth, checkAdmin, deleteProduct);
  router.put("/addreview/:id", checkAuth, addUserReview);
