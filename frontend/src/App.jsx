@@ -8,9 +8,9 @@ function App() {
 
   return (
     <>
-      <main className='py-4'>
+      <main>
         <Header />
-        <Container>
+        <Container className='p-4'>
           <Outlet/>
         </Container>
         <Footer />
