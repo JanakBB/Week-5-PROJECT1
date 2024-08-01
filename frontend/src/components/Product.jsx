@@ -2,28 +2,25 @@ import { Card } from "react-bootstrap";
 import Rating from "./Rating";
 import { Link } from "react-router-dom";
 
-
-function Product({product}) {
-  return(
+function Product({ product }) {
+  return (
     <Card className="my-3 p-2 rounded">
-      <Card.Img variant="top" src={product.image}></Card.Img>
+      <Link to={`/product/${product._id}`}>
+        <Card.Img variant="top" src={product.image}></Card.Img>
+      </Link>
       <Card.Body>
         <Card.Text as="div" className="product-title">
           <Link to={`/product/${product._id}`}>
-          <strong>
-            {product.name}
-          </strong>
+            <strong>{product.name}</strong>
           </Link>
         </Card.Text>
         <Card.Text as="div">
-          <Rating value={product.rating} text={product.numReviews}/>
+          <Rating value={product.rating} text={product.numReviews} />
         </Card.Text>
-        <Card.Text as="h3">
-          ${product.price}
-        </Card.Text>
+        <Card.Text as="h3">${product.price}</Card.Text>
       </Card.Body>
     </Card>
-  )
+  );
 }
 
 export default Product;
